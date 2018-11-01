@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New CV Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="NewCvBootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+</head>
+<body>
+
+<div>
+    <div class="row">
+   <div class="col-sm-2" id="naviagation" >
+     <aside>
+         <p>
+             1 impassse Martin<br>
+             59212 Wignehies<br>
+             06/16/41/85/28<br>
+             dd_spilmont@hotmail.fr
+         </p>
+
+
+         <nav>
+             <ul class="flex-column">
+                 <li class="nav-item">
+                     <a class="nav-link active" id="bt-exp" href="#"> Experiences Professionelles</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link active" id="bt-dip" href="#">Diplomes</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link active" id="bt-comp" href="#">Competences</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link active" id="bt-mess" href="#">Messagerie</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link active" id="bt-tt" href="#">toutes les rubriques</a>
+                 </li>
+             </ul>
+         </nav>
+
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+             <!-- Indicators -->
+
+             <ol class="carousel-indicators">
+                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                 <li data-target="#myCarousel" data-slide-to="1"></li>
+                 <li data-target="#myCarousel" data-slide-to="2"></li>
+             </ol>
+
+             <!-- Wrapper for slides -->
+             <div class="carousel-inner">
+                 <div class="item active">
+                     <img src="logos/facebook.png" height="100" width="100"/>
+                 </div>
+
+                 <div class="item">
+                     <a href="https://github.com/spilmont"> <img src="logos/github.png" height="150" width="150"/></a>
+                 </div>
+                 <div class="item">
+                     <img src="logos/linked in.png" height="100" width="100"/>
+                 </div>
+             </div>
+
+             <!-- Left and right controls -->
+             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                 <span class="glyphicon glyphicon-chevron-left"></span>
+                 <span class="sr-only">Previous</span>
+             </a>
+             <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                 <span class="glyphicon glyphicon-chevron-right"></span>
+                 <span class="sr-only">Next</span>
+             </a>
+         </div>
+
+
+
+     </aside>
+   </div>
+    <div class="col-sm-9" id="principal">
+        <header>
+            <h1>Spilmont André</h1>
+        </header>
+        <section>
+           <aside id="exp-pro">
+
+               <h2>EXPERIENCES PROFESSIONELLES</h2>
+               <div id="ff">
+               <ul> <!-- liste non ordonné de mes differentes experiences professionelles -->
+                   <li>2018: apprenant Developpeur Web Grande ecole du numerique Fourmies</li>
+                   <li>2016-2018: Ouvrier du batiment polivalent (chantier d'insertion) CCAS Fourmies</li> <!-- <li> permet de rajouter un element a ma liste -->
+                   <li> 2017: Technicien de maintenance Informatique stagiaire TEMIR IRFORMATIQUE Fourmies</li>
+                   <li> 2016: Ouvrirer du batiment polivalent Stagiaire Bruyere Imobilier Fourmies</li>
+                   <li>2014: Manutensuinnaire Materne Boué</li>
+               </ul>
+               </div>
+           </aside>
+            <aside id="diplome">
+                <h2>DIPLOMES</h2>
+                <ul>
+                    <li>2012: BTS Assistant Technique de l'Ingenieur</li>
+                    <li>2010: Bac STI Genie Electrotechnique</li>
+                    <li>2007: BEP metier de l'electricite</li>
+                </ul>
+            </aside>
+
+            <aside id="competence">
+                <h2>COMPETENCES</h2>
+                <ul>
+                    <li>utilisation des langage HTML CSS JAVASCRIPT</li>
+                    <li>utilisation de GIT/GIThub</li>
+                    <li>utilisation de BOOTSTRAP</li>
+                </ul>
+            </aside>
+
+            <aside id="messagerie">
+
+                <FORM action="mailto:dd_spilmont@hotmail.fr"> <!-- formulaire de message ( a completer quiand on airas vu la partis PHP en attendant  envoie lutilisateur sur mon email ) -->
+
+                    <fieldset>
+
+                        <legend>message</legend>
+                        <div class="row" id="div-nom">
+                            <label for="nom"> nom:</label>
+                            <input type="text" name="nom" id="nom" required> <!--  champs du formulaire permetant de saisir du texte -->
+                        </div>
+                        <div class="row">
+                            <label for="prenom"> prenom:</label>
+                            <input type="text" name="prenom" id="prenom" required> <!-- required rend obligatoire  le champs -->
+                        </div>
+                        <div class="row">
+                            <label for="email">email: </label>
+                            <input type="email" name="email" id="email" required> <!-- champs permetant de rentrer un email -->
+                        </div>
+                        <div class="row">
+                            <label for="messages">votre message:</label> <!-- champs permettant de rentrer un message de grande taille comme  un commentaire-->
+                            <textarea name="message" id="messages"></textarea>
+                        </div>
+                        <INPUT TYPE=SUBMIT VALUE=Envoyer class="btn btn-primary boutton" > <!-- creer un bouton envoyer -->
+                        <INPUT TYPE=RESET VALUE=Effacer class="btn btn-primary boutton"> <!-- creer un boutton qui efface le contenu des champs du formulaire -->
+                    </fieldset>
+
+                </FORM>
+
+            </aside>
+
+
+
+        </section>
+    </div>
+
+
+    </div>
+</div>
+<script src="NewCvBootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

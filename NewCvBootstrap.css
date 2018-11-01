@@ -1,0 +1,73 @@
+#naviagation{
+    background-color: #005cbf;
+}
+
+
+
+#naviagation p {
+    padding-top: 2%;
+    margin-bottom: 50%;
+    color: white;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+
+
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: #721c24;
+}
+
+nav a:focus{
+    text-decoration: none;
+    color: #721c24;
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    padding-bottom: 1.5%;
+}
+
+h2{
+    text-align: center;
+}
+
+#myCarousel{
+    width: 105%;
+    height: 150px;
+    margin-top: 35%;
+
+
+}
+
+nav li{
+    list-style: none;
+    font-size: 1.3em;
+    line-height: 4.5em;
+}
+
+#principal li {
+    position: relative;
+    left: 35%;
+    list-style-type: none;
+    line-height: 2.5em;
+}
+
+#messagerie{
+    text-align: center;
+}
+
+
+
+
+
+
